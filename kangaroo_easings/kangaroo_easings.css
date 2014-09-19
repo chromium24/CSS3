@@ -1,0 +1,106 @@
+img.ease, img.easeIn, img.easeOut, img.bezierSlow,img.bezierMed, img.bezierFast{
+    width: 100px;
+    height: 100px;
+    position: absolute; top: 500px; left: 0;
+}
+
+img.easeIn{
+    position: absolute;top: 500px;left: 200px;
+}
+
+img.easeOut{
+    position: absolute; top: 500px; left: 400px;
+}
+
+img.bezierSlow{
+    position: absolute; top: 500px; left: 600px;
+}
+
+img.bezierMed{
+    position: absolute; top: 500px; left: 800px;
+}
+
+img.bezierFast{
+    position: absolute; top: 500px; left: 1000px;
+}
+
+
+
+.ease{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 10s;
+
+}
+
+.easeIn{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 10s;
+}
+
+.easeOut{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 10s;
+}
+
+.bezierSlow
+{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: cubic-bezier(0.39,-0.02,0.56,0.92);
+    -webkit-animation-duration: 10s;
+
+}
+
+.bezierMed
+{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: cubic-bezier(0.43,0.20,0.53,0.99);
+    -webkit-animation-duration: 10s;
+
+}
+
+.bezierFast
+{
+    -webkit-transform-origin: 0%;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-name: up;
+    -webkit-animation-delay: 0;
+    -webkit-animation-timing-function: cubic-bezier(0.53,0.55,0.07,1.01);
+    -webkit-animation-duration: 10s;
+
+}
+
+@-webkit-keyframes up{
+   0%{
+       -webkit-transform: translateY(0);
+   }
+   50%{
+        -webkit-transform: translateY(-500px);
+   }
+    100%{
+        -webkit-transform: translateY(0);
+    }
+}
